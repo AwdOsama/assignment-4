@@ -34,6 +34,7 @@ body {
   padding: 5px 24px;
   border-radius: 20px;
 }
+
 .menu-wrapper {
   display: none;
 }
@@ -46,6 +47,7 @@ body {
 .logo span {
   color: #ff7300;
 }
+
 nav a {
   text-decoration: none;
   color: inherit;
@@ -68,34 +70,43 @@ nav ul {
   transition: all 0.3s;
   display: inline-block;
 }
+
 .links ul li a:hover {
   color: rgb(255, 122, 80);
 }
+
 .links img {
   margin-left: 16px;
   width: 14px;
   height: 14px;
 }
+
 .computer-nav-btn {
   transition: all 0.3s;
   font-size: 14px;
   font-weight: 700;
 }
+
 .computer-nav-btn:hover {
   transform: translate(3px, 3px);
 }
+
 .btn-computer-nav {
   background-color: #ffd15b;
   padding: 8px 16px;
   border: 2px solid black;
   border-radius: 20px;
 }
+
 .hero {
+  position: relative;
   width: 100%;
-  background: rgb(255, 240, 133, 1);
+  background: rgb(255, 240, 133);
   padding-top: 144px;
   padding-bottom: 64px;
+  overflow: hidden;
 }
+
 .hero .container {
   display: grid;
   grid-template-areas: "hero-info hero-img";
@@ -103,6 +114,7 @@ nav ul {
   gap: 60px;
   align-items: center;
 }
+
 .bg-hero-info {
   background-color: #000;
   border: #000 2px solid;
@@ -111,6 +123,7 @@ nav ul {
   box-shadow: 3px 3px #000;
   margin-bottom: 24px;
 }
+
 .hero-info {
   grid-area: hero-info;
   display: flex;
@@ -131,15 +144,19 @@ nav ul {
   text-shadow: 3px 3px #000;
   margin: 0;
 }
+
 .hero-text-black {
   color: rgb(0, 0, 0);
 }
+
 .hero-text-red {
   color: oklch(0.577 0.245 27.325);
 }
+
 .hero-text-blue {
   color: oklch(0.546 0.245 262.881);
 }
+
 .hero-info p {
   padding: 16px;
   border: 2px black solid;
@@ -148,29 +165,29 @@ nav ul {
   font-size: 24px;
   box-shadow: 3px 3px #000;
 }
+
 .hero-btns {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.dark-btn {
-  margin-right: 16px;
-  box-shadow: 8px 8px #000;
-  transition: all 0.3s;
-}
+.dark-btn,
 .white-btn {
   box-shadow: 8px 8px #000;
   transition: all 0.3s;
 }
-.dark svg {
-  width: 30px;
-  height: 30px;
+
+.dark-btn {
+  margin-right: 16px;
 }
+
+.dark svg,
 .white svg {
   width: 30px;
   height: 30px;
 }
+
 .dark {
   padding: 16px 32px;
   display: flex;
@@ -181,6 +198,7 @@ nav ul {
   font-size: 20px;
   font-weight: 700;
 }
+
 .white {
   padding: 16px 32px;
   display: flex;
@@ -191,21 +209,19 @@ nav ul {
   font-size: 20px;
   font-weight: 700;
 }
-.white-btn:hover {
-  box-shadow: 0px 0px;
-  transform: translate(10px, 10px);
-}
+
+.white-btn:hover,
 .dark-btn:hover {
   box-shadow: 0px 0px;
-
   transform: translate(10px, 10px);
 }
+
 .hero::before {
   content: "";
   position: absolute;
   width: 150px;
   height: 150px;
-  background-color: rgb(229, 216, 119, 1);
+  background-color: rgb(229, 216, 119);
   top: 30px;
   left: 60px;
   transform: rotate(10deg);
@@ -217,12 +233,13 @@ nav ul {
   position: absolute;
   width: 100px;
   height: 100px;
-  background-color: rgb(255, 220, 124, 1);
+  background-color: rgb(255, 220, 124);
   right: 90px;
   top: 180px;
   transform: rotate(45deg);
   z-index: 0;
 }
+
 .hero-img {
   position: relative;
   grid-area: hero-img;
@@ -238,15 +255,17 @@ nav ul {
   border: 4px solid #000;
   box-shadow: 8px 8px 0px #000;
   background-color: #fff;
-  background-color: blue;
   transition: transform 0.3s;
 }
+
 .img:hover {
   transform: translate(-3px, -3px);
 }
+
 .hero-img .img img {
   width: 100%;
 }
+
 .bg-hero-img {
   position: absolute;
   top: -12px;
@@ -259,6 +278,7 @@ nav ul {
   box-shadow: 3px 3px 0px #000;
   z-index: 10;
 }
+
 .bg-hero-img span {
   font-size: 16px;
   font-weight: 700;
