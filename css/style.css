@@ -1476,15 +1476,21 @@ a {
   }
 
   .card-community {
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 20px;
   }
-  .card-community p {
-    font-size: 14px;
-  }
-  .right-community-flex img {
-    margin: 0 15px 0 0;
-  }
+.right-community-flex img {
+  width: 45px;
+  height: 45px;
+ 
+}
+
+.card-community-info h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
   .footer-grid {
     display: grid;
     grid-template-columns: 1fr;
