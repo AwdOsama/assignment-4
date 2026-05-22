@@ -1144,6 +1144,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .policy a {
   color: #fff;
@@ -1514,10 +1515,14 @@ a {
     flex-direction: column;
     gap: 15px;
   }
+
   .policy a {
     font-size: 14px;
     font-weight: 600;
-    margin: 0 0 8px 0;
+    margin: 0 8px 0 0;
+  }
+  .last-policy-link {
+    margin: 0;
   }
   .footer-foot p {
     font-size: 14px;
