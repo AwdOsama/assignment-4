@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -69,6 +70,7 @@ a {
   font-weight: 600;
   transition: all 0.3s;
   display: inline-block;
+  color: #000;
 }
 
 .links ul li a:hover {
@@ -85,6 +87,9 @@ a {
   transition: all 0.3s;
   font-size: 14px;
   font-weight: 700;
+}
+.computer-nav-btn a {
+  color: #000;
 }
 
 .computer-nav-btn:hover {
@@ -1103,6 +1108,7 @@ a {
   font-size: 18px;
   font-weight: 600;
   background-color: #000;
+  color: #fff;
 }
 .footer-btn {
   padding-block: 20px;
@@ -1226,7 +1232,6 @@ a {
   .menu-wrapper:hover .dropdown {
     opacity: 1;
     visibility: visible;
-
     transform: translateY(0);
   }
 
@@ -1249,6 +1254,7 @@ a {
     font-weight: 700;
     transition: all 0.3s;
     display: inline-block;
+    color: #000;
   }
 
   .dropdown ul li a:hover {
@@ -1268,6 +1274,7 @@ a {
     font-weight: 700;
     box-shadow: 8px 8px 0 #000;
     transition: all 0.3s;
+    color: #000;
   }
 
   .subscribe-btn:hover {
@@ -1462,6 +1469,14 @@ a {
   .footer-foot {
     flex-direction: column;
     gap: 15px;
+  }
+  .policy a {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .footer-foot p {
+    font-size: 14px;
+    font-weight: 600;
   }
 }
 
